@@ -294,10 +294,9 @@ MOV P2, A ; send value in accumulator to P2
 MOV R0, A ; copy value in accumulator to R0
 MOV R1, A ; copy value in accumulator to R1
 MOV R2, A ; copy value in accumulator to R2
+;END
 ```
 
-;END
-	
 //4 3
 ```
 ORG 00H
