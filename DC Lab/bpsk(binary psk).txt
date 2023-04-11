@@ -1,0 +1,47 @@
+clc;
+clear all;
+close all;
+n=10;
+eb=1;
+tb=1;
+fc=3;
+fs=30;
+bits=randi([0 1],1,n);
+polar=[];
+vp=1;
+for i=1:n
+    if bits(i)==1
+        polar=[polar ones(1,fs)*(vp)];
+    elseif bits(i)==0
+        polar=[polar ones(1,fs)*(-vp)];
+    end
+end
+t=1/fs:1/fs:n;
+modulated=polar.*sqrt(2*eb/tb).*cos(2*pi*fc*t);
+rx_symbols=modulated.*cos(2*pi*fc*t);
+rx_bits=(rx_symbols>0);
+rbits=rx_bits(1:fs:end);
+
+subplot(4,1,1);
+stem(0:n-1,bits);
+title('transmitted bits');
+xlabel('bit index');
+ylabel('value');
+
+subplot(4,1,2);
+plot(0:n*fs-1,polar);
+title('transmitted bits');
+xlabel('time ->');
+ylabel('value');
+
+subplot(4,1,3);
+plot(modulated);
+title('bpsk modulated signal');
+xlabel('time ->');
+ylabel('amplitude');
+
+subplot(4,1,4);
+stem(0:n-1,rbits);
+title('dempdulated bits');
+xlabel('bit index');
+ylabel('value');

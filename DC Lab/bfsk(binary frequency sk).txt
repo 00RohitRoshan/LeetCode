@@ -1,0 +1,50 @@
+close all; clear all; clc
+% Generate a random bit sequence
+N = 10;
+bits = randi([0 1], 1, N);
+
+% Define BFSK modulation parameters
+f1 = 1;     % Frequency for bit 0
+f2 = 2;     % Frequency for bit 1
+fs = 30;    % Sampling frequency
+Tb = 1;     % Bit duration
+Sb = fs*Tb; % Number of samples per bit
+t = 0:1/fs:N-1/fs; % Time vector
+
+% Generate carrier signals
+c1 = sin(2*pi*f1*(0:Sb-1)/fs);
+c2 = sin(2*pi*f2*(0:Sb-1)/fs);
+
+% BFSK modulation
+modulated = [];
+for i = 1:N
+    if bits(i) == 0
+        modulated = [modulated c1];
+    else
+        modulated = [modulated c2];
+    end
+end
+
+% Non-coherent demodulation
+s_filtered = filter([1 -1], 1, modulated); %using high pass filter 
+demod_bits = zeros(1,N);
+for i = 1:N
+    x = s_filtered((i-1)*Sb+1:i*Sb);
+    y = c2;
+    demod_bits(i) = (x*y') > 0; %envelop detector
+end
+subplot(3,1,1)
+stairs(0:N-1,bits)
+title('Input Bits')
+axis([0 N-1 -0.5 1.5])
+
+subplot(3,1,2)
+plot(t,modulated)
+title('BFSK Modulated Signal')
+axis([0 N-1 -1 1])
+
+subplot(3,1,3)
+stairs(0:N-1,demod_bits)
+title('Demodulated Bits')
+axis([0 N-1 -0.5 1.5])
+

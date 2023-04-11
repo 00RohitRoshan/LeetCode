@@ -1,0 +1,26 @@
+clc;
+clear;
+close all;
+f=10;
+fs=10*f;
+ts=1/fs;
+tc=0:0.0001:5/f;
+td=0:ts:5/f;
+xc=sin(2*pi*f*tc);
+xd=sin(2*pi*f*td);
+n=length(td);
+xr=zeros(size(tc));
+sincpulse=zeros(n,length(tc));
+for t=1:length(tc)
+    for m=0:n-1
+        sincpulse(n+1,:)=sin(pi*(tc-m*ts)/ts)./(pi*(tc-m*ts)/ts);
+        xr(t)=xr(t)+xd(m+1)*sin(pi*(tc(t)-m*ts)/ts)./(pi*(tc(t)-m*ts)/ts);
+    end
+end
+
+subplot(3,1,1);plot(tc,xc);
+xlabel('time');ylabel('amplitude');title('sine wave');grid on;
+subplot(3,1,2);plot(td,xd);
+xlabel('time');ylabel('amplitude');title('sampled wave');grid on;
+subplot(3,1,3);plot(tc,xr);
+xlabel('time');ylabel('amplitude');title('reconstructed wave');grid on;
