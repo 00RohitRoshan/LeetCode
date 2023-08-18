@@ -13,7 +13,7 @@ public:
         int rank =0;
         for(int i =0; i<n; i++){
             for(int j = i+1; j<n; j++){
-               if(i!=j){ rank = max(rank, count[i]+count[j]-direct[i][j]);}
+                rank = max(rank, count[i]+count[j]-direct[i][j]);
             }
         }
         return rank;
