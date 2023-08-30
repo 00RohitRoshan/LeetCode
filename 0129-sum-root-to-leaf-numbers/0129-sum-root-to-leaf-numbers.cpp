@@ -26,8 +26,8 @@ public:
     }
  
     helper(rt->left, n);
-    n /= 10;
-    n = (n*10) + rt->val;
+    // n /= 10;
+    // n = (n*10) + rt->val;
     helper(rt->right, n);
     }
 
