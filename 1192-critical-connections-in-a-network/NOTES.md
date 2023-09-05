@@ -1,0 +1,2 @@
+[Striver](https://leetcode.com/problems/critical-connections-in-a-network/discuss/382385/Find-bridges-in-a-graph)
+[Explained](https://leetcode.com/problems/critical-connections-in-a-network/discuss/3390603/C++-EASY-TO-READ-oror-TARJANS-ALGOITHM-SOLUTION)
