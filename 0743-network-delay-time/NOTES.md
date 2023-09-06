@@ -1,0 +1,1 @@
+[Explained](https://leetcode.com/problems/network-delay-time/discuss/3844516/Easy-classic-DIJKSTRA-C++-or-easy-to-understand-:))
