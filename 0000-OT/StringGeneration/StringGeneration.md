@@ -33,3 +33,17 @@ S2 = "TFTT"
 Output
 S = -1
 ```
+```
+Input
+S1 = "ABC"
+S2 = "TTT"
+Output
+S = -1
+```
+```
+Input
+S1 = "ABA"
+S2 = "TTFF"
+Output
+S = -1
+```
