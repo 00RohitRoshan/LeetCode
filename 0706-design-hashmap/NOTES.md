@@ -1,0 +1,1 @@
+[check](https://leetcode.com/problems/design-hashmap/discuss/4126866/Easy-solution-with-explaination)
