@@ -1,0 +1,1 @@
+[check](https://leetcode.com/problems/sum-of-subarray-ranges/discuss/1624222/JavaC++Python-O(n)-solution-detailed-explanation)
