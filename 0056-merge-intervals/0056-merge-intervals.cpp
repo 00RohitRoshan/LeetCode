@@ -12,7 +12,6 @@ public:
             // cout<<i<<","<<"["<<temp[0]<<","<<temp[1]<<"]"<<",";
             if(intervals[i][0] <= temp[1]){
                 temp[1]=max(intervals[i][1],temp[1]);
-                temp[0]=min(intervals[i][0],temp[0]);
                 i++;
             }else if(intervals[i][0] > temp[1]){
                 res.push_back(temp);
