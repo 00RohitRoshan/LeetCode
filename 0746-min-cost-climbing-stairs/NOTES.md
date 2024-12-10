@@ -1,1 +1,0 @@
-[check](https://leetcode.com/problems/min-cost-climbing-stairs/discuss/4163085/Multiple-Approaches-Step-By-Step-Brute-Better-Optimal-Explanation-Video)

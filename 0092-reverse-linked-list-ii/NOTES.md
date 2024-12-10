@@ -1,1 +1,0 @@
-[Explained](https://leetcode.com/problems/reverse-linked-list-ii/discuss/4011862/92.40-Two-Pointers-and-Stack-and-Recursion)

@@ -1,1 +1,0 @@
-[Explained](https://leetcode.com/problems/rotting-oranges/discuss/3961474/BEST-SOLUTION-YOU-CAN-GET)

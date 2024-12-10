@@ -1,1 +1,0 @@
-[Explained](https://leetcode.com/problems/majority-element-ii/discuss/3177394/Best-C++-4-solutions-oror-Boyer-Moore-Voting-Algorithm-oror-Hash-Table-oror-Sorting-oror-One-Stop-Sol.)

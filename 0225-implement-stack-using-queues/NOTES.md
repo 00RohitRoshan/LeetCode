@@ -1,1 +1,0 @@
-[Explained](https://leetcode.com/problems/implement-stack-using-queues/discuss/3969470/99.74-One-Queue-Approach)

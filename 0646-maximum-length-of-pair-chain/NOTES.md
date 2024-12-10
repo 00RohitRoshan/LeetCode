@@ -1,1 +1,0 @@
-[Explained](https://leetcode.com/problems/maximum-length-of-pair-chain/discuss/3960577/2-Methods-oror-Greedy-+DP-oror-Similar-question-oror-Very-Easy-Code-oror-C++-oror-Java-oror-Python)

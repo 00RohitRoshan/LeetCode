@@ -1,1 +1,0 @@
-[Explained](https://leetcode.com/problems/minimum-replacements-to-sort-the-array/discuss/3978548/Easy-to-understandororFull-ExplanationDone-in-few-stepsororO(n)-Solution)

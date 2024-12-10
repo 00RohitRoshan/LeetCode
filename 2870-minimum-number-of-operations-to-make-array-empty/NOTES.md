@@ -1,1 +1,0 @@
-[vid](https://www.youtube.com/watch?v=jo7ROMSxGwA)

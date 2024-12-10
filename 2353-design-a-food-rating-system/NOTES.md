@@ -1,1 +1,0 @@
-[check](https://leetcode.com/problems/design-a-food-rating-system/discuss/4414602/Beats-100-Explained-HashMap-%2B-Priority-Queue-C%2B%2BJavaPythonJS-Visualized)

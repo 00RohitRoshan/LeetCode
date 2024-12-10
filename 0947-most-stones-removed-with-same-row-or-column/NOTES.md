@@ -1,1 +1,0 @@
-[Explained](https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/discuss/2812932/C++-Easy-UnderStanding-oror-DFS-Approach-oror-Video-Solution.)

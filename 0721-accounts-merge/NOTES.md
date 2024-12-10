@@ -1,1 +1,0 @@
-[Explained](https://leetcode.com/problems/accounts-merge/discuss/1602535/Full-Explanation-DRY-RUN-on-first-example-Code-with-comments-simple-variables-name-C++-!!!)

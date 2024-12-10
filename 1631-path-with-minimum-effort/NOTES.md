@@ -1,1 +1,0 @@
-[Explained](https://leetcode.com/problems/path-with-minimum-effort/discuss/3817439/C++-Dijkstra-Algorithm-oror-Detailed-Explanation)

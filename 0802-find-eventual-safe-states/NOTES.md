@@ -1,1 +1,0 @@
-[Explained](https://leetcode.com/problems/find-eventual-safe-states/discuss/3756391/Ex-Amazon-explains-a-solution-with-a-video-Python-JavaScript-Java-and-C++)
