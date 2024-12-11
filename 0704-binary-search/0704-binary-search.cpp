@@ -10,13 +10,13 @@ public:
         if(nums[j]==target){
             return j;
         }
-        while(i<j){
-            if(nums[i]==target){
-                return i;
-            }else
-            if(nums[j]==target){
-                return j;
-            }
+        while(i<=j){
+            // if(nums[i]==target){
+            //     return i;
+            // }else
+            // if(nums[j]==target){
+            //     return j;
+            // }
             mid = i+ (j-i)/2;
             if(nums[mid]<target){
                 i=mid+1;
