@@ -9,10 +9,11 @@ public:
             if (nums[m] == k) return m;
 
             // Handle duplicates by incrementing l or decrementing r
-            if (nums[l] == nums[m] && nums[m] == nums[r]) {
-                l++;  // Skip duplicate elements on both ends
-                r--;  // Skip duplicate elements on both ends
-            } else if (nums[l] <= nums[m]) {  // Left part is sorted
+            // if (nums[l] == nums[m] && nums[m] == nums[r]) {
+            //     l++;  // Skip duplicate elements on both ends
+            //     r--;  // Skip duplicate elements on both ends
+            // } else 
+            if (nums[l] <= nums[m]) {  // Left part is sorted
                 if (k >= nums[l] && k < nums[m]) {
                     r = m - 1;  // Search in the left half
                 } else {
